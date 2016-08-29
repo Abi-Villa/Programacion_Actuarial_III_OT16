@@ -1,0 +1,76 @@
+---
+title: "Tarea 1"
+author: "Abigail Villa"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+Kardex
+
+# Primer Semestre
+
+## Lista de Materias
+
+* Programación Actuarial I/ 7
+* Introducción a la Profesión Actuarial/ 7
+* Conceptos de Cálculo/ 6
+* Matemáticas Básicas/ 5
+* ProblemAs de Matemáticas Básicas/ 5
+* DHPC/ 10
+
+
+# Segundo Semestre
+## Lista de Materias
+
+* Teoría del Interés I/ 5
+* Formación Humana y Social/ 10
+* Geometría Analítica/ 9
+* Teoría de Ecuaciones/ 10
+* Matemáticas Básicas/ 6
+* Problemas de Matemáticas Básicas/6
+
+# Tercer Semestre
+## Lista de Materias
+
+* Microeconomía/ 10
+* Cálculo Diferencial/ 8
+* Algebra Lineal/ 5
+* Teoría del Interés/ 8
+
+# Cuarto Semestre
+## Lista de Materias
+
+* Programación Actuarial II/ 5
+* Teoría del Interés II/ 8
+* Macroeconomía/ 10
+* Cálculo Integral/ 9
+* Algebra Lineal/ 7
+
+# Quinto Semestre
+## Lista de Materias
+
+* Contabilidad General/ 8
+* Sistema Financiero Mexicano/ 10
+* Demografía/ 7
+* Cál. Dif. Varias Variables/ 5
+* Ecuaciones Diferenciales/ 8
+* Probabilidad I/ 5
+
+# Sexto Semestre
+## Lista de Materias
+
+* Programación Actuarial II/ 8
+* Matemáticas Actuariales I/ 7
+* Derivados Financieros/ 7
+* Cal. Dif en Varias Variables/ 6
+* Probabilidad I/6
+
+
+
+
