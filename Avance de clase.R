@@ -81,6 +81,25 @@ m
 getwd()
 setwd("~/GitHub/Programacion_Actuarial_III_OT16")
 data <- read.csv("table.csv")
-data <- read.table("table.csv",T,",")
+data <- read.table("table.csv",T,",",nrows = 100)
+clases <- sapply(data,class)
+data <- read.table("table.csv",T,",",colClasses = classes)
 data
+
+# Uso de dput y dget
+y <- data.frame(a=1,b="a")
+dput(y)
+dput(y,file = "y.R")
+nueva.y <- dget("y.R")
+y
+nueva.y
+
+x <- "Programacion Actuarial III"
+y <- data.frame(a=1, b="a")
+dump(c("x","y"),file = "data.R")
+rm(x,y)
+source("data.R")
+head(airquality)
+
+
 
