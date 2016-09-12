@@ -99,7 +99,59 @@ y <- data.frame(a=1, b="a")
 dump(c("x","y"),file = "data.R")
 rm(x,y)
 source("data.R")
-head(airquality)
+
+a <- head(airquality)
+dput(a)
+dput(a,file= "air_abi.R")
+a <- structure(airquality)
 
 
+#Valores Faltantes
+airquality[1:6,]
+completos <- complete.cases(airquality)
+airquality[completos,]
+airquality[completos,][1:6,]
+airquality[1:6,][completos,]
 
+
+x <- 1:4; y <- 6:9
+x + y
+
+
+m <- matrix(1:6,2,3)
+m
+
+x <- matrix(1:6,2,3)
+for(i in seq_len(nrow(x))) {for(j in seq_len(ncol(x))){print(x[i,j])}}
+
+count <- 0
+while(count<10){print(count)}
+
+z <- 5
+while(z>=3 && z<=10) {
+  print(z)
+  moneda <- rbinom(1,1,0.5)
+  if(moneda==1){ #Caminata Aleatoria
+    z <- z+1
+  } else {
+      z <- z - 1
+  }
+}
+
+
+  
+
+z <- 5
+caminata <- vector("numeric")
+while(z>=3 && z<=10) {
+  print(z)
+  caminata <- c(caminata,z)
+  moneda <- rbinom(1,1,0.5)
+  if(moneda==1){ #Caminata Aleatoria
+    z <- z + 1
+  } else {
+    z <- z - 1
+  }
+}
+caminata
+plot(caminata,type = "l") 

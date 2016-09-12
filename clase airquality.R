@@ -5,3 +5,6 @@ a <- structure(airquality)
 
 dput(a)
 dput(a,file= "air_abi.R")
+getwd()
+
+
