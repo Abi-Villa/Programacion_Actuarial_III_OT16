@@ -20,6 +20,7 @@ complets <- function(directorio="~/GitHub/Programacion_Actuarial_III_OT16/specda
   }
   table1 <- data.frame(id,nobs=variable)
   table1
+  
 }
 complets(, 1:110)
   
