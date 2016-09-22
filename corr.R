@@ -17,5 +17,5 @@ corr <- function(directorio= "~/GitHub/Programacion_Actuarial_III_OT16/specdata"
   }
   correlacion
 }
-cr <- corr("~/GitHub/Programacion_Actuarial_III_OT16/specdata",150)
+cr <- corr("specdata",150)
 head(cr)

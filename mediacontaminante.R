@@ -20,4 +20,4 @@ mediacontaminante <- function(directorio="~/GitHub/Programacion_Actuarial_III_OT
   promedio <- mean(total_suma, na.rm = T)
   promedio
 }
-mediacontaminante(,"sulfate",1)
+mediacontaminante(, "sulfate",1)
