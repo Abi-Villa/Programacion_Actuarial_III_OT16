@@ -2,6 +2,7 @@ complets <- function(directorio="~/GitHub/Programacion_Actuarial_III_OT16/specda
   setwd(directorio)
   
   variable <- vector("numeric")
+  #Condiciones
   for (inicio in id) {
     if(inicio<10){
       excel <- read.csv(paste("00",inicio,".csv",sep = ""))
@@ -11,11 +12,13 @@ complets <- function(directorio="~/GitHub/Programacion_Actuarial_III_OT16/specda
       
     }else{
       excel <- read.csv(paste(inicio,".csv",sep = ""))
+      #Lo anterior fue para leer los datos desde excel de nitrato y sulfato para poder localizarlo p/e: 022.csv
     }
     si <- complete.cases(excel)
     ok <- excel[si,]
     nf <- nrow(ok)
     variable <- c(variable,nf)
+    #Busca los casos completos
     
   }
   table1 <- data.frame(id,nobs=variable)
@@ -23,5 +26,5 @@ complets <- function(directorio="~/GitHub/Programacion_Actuarial_III_OT16/specda
   
 }
 
-complets(, 1:110)
+complets(, 3)
   
